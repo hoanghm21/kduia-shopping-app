@@ -12,7 +12,7 @@ export const AppReducer = (state, action) => {
                     updatedqty = true;
                 }
                 new_expenses.push(expense);
-                return updatedqty;
+                return updatedqty; // return true;
             })
             state.expenses = new_expenses;
             action.type = "DONE";
